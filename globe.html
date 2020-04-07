@@ -1,0 +1,64 @@
+<head>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="globe.css">
+    <script src="http://d3js.org/d3.v4.min.js" charset="utf-8"></script>
+    <script src="https://d3js.org/d3-polygon.v1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js"></script>
+    <script src="./versor.js"></script>
+    <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="preloader.js"></script>
+    <title>COVID-19 Visualizer</title>
+</head>
+<body>
+   
+<div class="preloader-wrapper">
+    <div class="preloader">
+        <img src="Rolling-1s-200px.gif" alt="NILA">
+    </div>
+</div>
+    <div id="particles-js">
+    <div id="major">
+    <h2 id="heading">COVID-19</h2>
+    <p id="content">Hover on a country or territory to see cases, deaths, and recoveries.</p>
+    </div>
+    <div id="data">
+<h2 id="current"></h2>
+<h3 id="c1"></h3>
+</div>
+<div id="canvas"></div>
+<canvas id="globe"></canvas>
+</div>
+</div>
+<div id="foot1">
+<div id="footer">
+    <div id="stats">
+        <p>
+            <span class="tiny">
+                TOTAL COUNTS (as of 
+                <span id="timestamp"></span>
+                )
+            </span>
+            <br>
+        </p>    
+    </div>
+    <div id="stats-2"><p>
+        Active : <span id="data-active"></span>
+        <span class="muted disappear">&nbsp;•</span>
+        Deaths : <span id="data-deaths"></span>
+        <span class="muted disappear">&nbsp;•</span>
+        Recoveries : <span id="data-recover"></span>
+    </p></div>
+    <div id="more-info">
+        <button>More Information</button>
+    </div>
+    
+</div>
+</div>
+
+<script src="particles.js"></script>
+<script src="app.js"></script>
+<script src="globe.js"></script>
+<script src="date.js"></script>
+</body>
