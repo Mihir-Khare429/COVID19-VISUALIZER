@@ -9,10 +9,11 @@ html, body {
   }
   
   #globe {
-    position: absolute;
+    position: absolute ;
     cursor: move; 
     margin: 0px; 
     margin-top: -7%;
+    cursor: pointer;
   }
   #canvas{
       display: flex;
@@ -26,7 +27,7 @@ html, body {
     margin-left: 4%;
     margin-top: 4%;
   }
- #heading, #content {
+ #heading, #content1 {
      display: flex;
      justify-content: center;
      font-family: Rubik ,sans-serif;

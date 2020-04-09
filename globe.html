@@ -1,15 +1,17 @@
 <head>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <link rel="stylesheet" href="globe.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Fevicon.png">
     <script src="http://d3js.org/d3.v4.min.js" charset="utf-8"></script>
     <script src="https://d3js.org/d3-polygon.v1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js"></script>
     <script src="./versor.js"></script>
     <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <link rel="stylesheet" href="style.css">
     <script src="preloader.js"></script>
-    <title>COVID-19 Visualizer</title>
+    <link rel="stylesheet" href="pop.css">
+    <title>CORIFY</title>
 </head>
 <body>
    
@@ -20,8 +22,8 @@
 </div>
     <div id="particles-js">
     <div id="major">
-    <h2 id="heading">COVID-19</h2>
-    <p id="content">Hover on a country or territory to see cases, deaths, and recoveries.</p>
+    <h2 id="heading">CORIFY</h2>
+    <p id="content1">Click on a country or territory to see cases, deaths, and recoveries.</p>
     </div>
     <div id="data">
 <h2 id="current"></h2>
@@ -56,6 +58,50 @@
     
 </div>
 </div>
+
+<!--Modal for display of country related content-->
+<div class="modal">
+    <div id="overlay">
+        <div id="content">
+            <div id="c-flag">
+                <img src="download.png" id="flag-content">
+            </div>
+            <div id="c-container">
+                <div id="c-name">India</div>
+                <div id="c-data">
+                    <span id="total-cases" class="style">
+                        Total Cases <span id="t-case">10202</span>
+                    </span>
+                    <br>
+                    <span id="active-cases" class="style">
+                        Active Cases <span id="a-case">8202</span>
+                    </span>
+                    <br>
+                    <span id="deaths" class="style">
+                        Deaths <span id="d-case">102</span>
+                    </span>
+                    <br>
+                    <span id="recover" class="style">
+                        Recovered <span id="r-case">82</span>
+                    </span>
+                    <br>
+                </div>
+                <div id="c-data2">
+                    <span id="cvc">TODAY</span>
+                    <br>
+                    <span id="new-case" class="style">
+                        New Case <span id="n-case">102</span>
+                    </span>
+                    <br>
+                    <span id="new-death" class="style">
+                        New Death <span id="nd-case">82</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        
 
 <script src="particles.js"></script>
 <script src="app.js"></script>
